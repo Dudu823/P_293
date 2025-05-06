@@ -1,0 +1,253 @@
+
+/*--------------------------BODY----------------------------*/
+body{
+  background-image: url(image/pexels-captainsopon-3373090.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
+/*--------------------------HEADER----------------------------*/
+header * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+header a {
+  display: inline-block;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+nav a {
+  padding: .5em .8em;
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+nav a::before,
+nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgba(255, 0, 0, 0.548);
+  border-right: 3px solid rgba(255, 0, 0, 0.548);
+  transform: translate(-100%, 50%);
+}
+
+nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.548);
+  border-left: 3px solid rgba(255, 0, 0, 0.548);
+  transform: translate(100%, -50%)
+}
+
+nav a:hover:before,
+nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div-header {
+    display: flex;
+  }
+  
+  .txt-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 2400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+
+  .txt-header a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .txt-header a:hover{
+    color: rgba(255, 0, 0, 0.548);
+  }
+
+  .logo-final {
+    padding-right: 30px;
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+  }
+
+
+
+/*--------------------------FOOTER----------------------------*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.div-footer{
+  background-color: rgba(0, 0, 0, 0.295);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 13px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+  height: 80px;
+  width: 2850px;
+}  
+
+
+.txt-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
+  .txt-footer a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .txt-footer a:hover{
+    color: rgba(255, 0, 0, 0.548);
+  }
+
+.div-copyright{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding-left: 20px;
+}
+
+
+
+
+/*--------------------------MAIN----------------------------*/
+
+main {
+  margin-top: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-flex;
+}
+
+
+.div-formulaire {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 713px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 3000px;
+  padding: 10px;
+  margin: auto;
+  color: black;
+  border: black solid 2px;
+  border-radius: 40px;
+  background-color: rgba(255, 0, 0, 0.452);
+  width: 1300px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  font-size: 20px;
+  resize: none;
+}
+
+label {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+input[type="submit"] {
+  width: 250px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(255, 0, 0, 0.452);
+}
+
+.choix-voiture{
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.choix-voiture option{
+  font-size: 20px;
+  background-color: rgba(255, 0, 0, 0.452);
+  color: white;
+}
+
+.choix-voiture select{
+  background-color: rgba(0, 0, 0, 0.534);
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 7px;
+}

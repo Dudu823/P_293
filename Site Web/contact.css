@@ -9,6 +9,7 @@ body{
 
 
 
+
 /*--------------------------HEADER----------------------------*/
 header * {
   box-sizing: border-box;
@@ -62,8 +63,6 @@ nav a:hover:after{
   opacity: 1;
 }
 
-
-
 header{
     display: flex;
     justify-content: center;
@@ -80,7 +79,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 2400px;
+    max-width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
   }
@@ -104,57 +103,8 @@ header{
 
 
 
-/*--------------------------FOOTER----------------------------*/
-
-footer {
-  position: fixed;
-  bottom: 0;
-}
-
-.div-footer{
-  background-color: rgba(0, 0, 0, 0.295);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 13px;
-  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
-  height: 80px;
-  width: 2850px;
-}  
-
-
-.txt-footer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    margin-bottom: 40px;
-  }
-
-  .txt-footer a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .txt-footer a:hover{
-    color: rgba(255, 0, 0, 0.548);
-  }
-
-.div-copyright{
-  font-size: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  padding-left: 20px;
-}
-
-
-
 
 /*--------------------------MAIN----------------------------*/
-
 main {
   margin-top: 200px;
 }
@@ -166,7 +116,6 @@ ul {
 li {
   display: inline-flex;
 }
-
 
 .div-formulaire {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -250,4 +199,109 @@ input[type="submit"]:hover {
   border-radius: 20px;
   color: white;
   margin-top: 7px;
+}
+
+
+
+
+/*--------------------------FOOTER----------------------------*/
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.div-footer{
+  background-color: rgba(0, 0, 0, 0.295);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 13px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+  height: 80px;
+  width: 2850px;
+}  
+
+.txt-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
+  .txt-footer a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .txt-footer a:hover{
+    color: rgba(255, 0, 0, 0.548);
+  }
+
+.div-copyright{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding-left: 20px;
+}
+
+
+
+
+
+/* --------------------- RESPONSIVE DESIGN --------------------- */
+
+@media (max-width: 1024px) {
+  .txt-header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+  }
+
+  form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .txt-footer {
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .div-footer {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .div-copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 20px;
+  }
+
+  .txt-footer {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
 }

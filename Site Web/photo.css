@@ -10,7 +10,6 @@ body{
 
 
 
-
 /*--------------------------HEADER----------------------------*/
 header * {
   box-sizing: border-box;
@@ -64,8 +63,6 @@ nav a:hover:after{
   opacity: 1;
 }
 
-
-
 header{
     display: flex;
     justify-content: center;
@@ -82,11 +79,10 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 2400px;
+    max-width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
   }
-
 
   .txt-header a{
     text-decoration: none;
@@ -108,54 +104,7 @@ header{
 
 
 
-
-/*--------------------------FOOTER----------------------------*/
-
-.div-footer{
-  background-color: rgba(0, 0, 0, 0.295);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 13px;
-  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
-  height: 80px;
-}  
-
-
-.txt-footer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    margin-bottom: 40px;
-  }
-
-  .txt-footer a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .txt-footer a:hover{
-    color: rgba(255, 0, 0, 0.548);
-  }
-
-.div-copyright{
-  font-size: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  padding-left: 20px;
-}
-
-
-
-
-
-
 /*--------------------------MAIN----------------------------*/
-
 .photo-maincol1{
   border-bottom: black solid;
 }
@@ -203,4 +152,103 @@ header{
 
 .photo-hover:hover{
   opacity: 0.8;
+}
+
+
+
+
+/*--------------------------FOOTER----------------------------*/
+.div-footer{
+  background-color: rgba(0, 0, 0, 0.295);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 13px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+  height: 80px;
+}  
+
+
+.txt-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
+  .txt-footer a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .txt-footer a:hover{
+    color: rgba(255, 0, 0, 0.548);
+  }
+
+.div-copyright{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding-left: 20px;
+}
+
+
+
+
+
+/* --------------------- RESPONSIVE DESIGN --------------------- */
+@media (max-width: 1024px) {
+  .txt-header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .txt-footer {
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .div-footer {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .div-copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .photo-maincol1,
+  .photo-maincol2,
+  .photo-maincol3 {
+    flex-direction: column !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-col1 img,
+  .photo-col2 img,
+  .photo-col3 img {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 20px;
+  }
+
+  .txt-footer {
+    font-size: 18px;
+  }
 }

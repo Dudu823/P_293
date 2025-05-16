@@ -18,6 +18,7 @@
                 <div class="txt-header">
                   <a href="accueil.html">Accueil</a>
                   <a href="photo.html">Photo</a>
+                  <a href="moto.html">Moto</a>
                   <a href="contact.html" style="color: rgba(255, 0, 0, 0.548);">Contact</a>
                 </div>
               </div>
@@ -25,37 +26,38 @@
     </header>
 
 
-    <main>
-      <div class="div-formulaire">
-        <form method="get" action="">
-          <div class="form-nom-email">
-            <div class="form-column">
-              <label for="nom">Nom et Prénom</label>
-              <input type="text" name="nom" id="nom" />
-            </div>
-            <div class="form-column">
-              <label for="email">E-mail</label>
-              <input type="e-mail" name="email" id="email" />
-            </div>
-            <div class="choix-voiture">
-              <label for="choix">Type de voiture</label>
-              <select id="choix" name="choix">
-                  <option value="option1">-</option>
-                  <option value="option2">Sportive</option>
-                  <option value="option3">SUV</option>
-                  <option value="option4">4x4</option>
-                  <option value="option5">Cabriolet</option>
-                  <option value="option6">Berline</option>
-                  <option value="option6">Autre</option>
-              </select>
-              </div>
-          </div>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="10"></textarea>
-          <input type="submit" value="ENVOYER" class="cta" />
-        </form>
+<main>
+  <div class="div-formulaire">
+    <form method="get" action="">
+      <div class="form-nom-email">
+        <div class="form-column">
+          <label for="nom">Nom et Prénom</label>
+          <input type="text" name="nom" id="nom" required />
+        </div>
+        <div class="form-column">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="choix-voiture">
+          <label for="choix">Type de voiture</label>
+          <select id="choix" name="choix" required>
+            <option value="">-</option>
+            <option value="sportive">Sportive</option>
+            <option value="suv">SUV</option>
+            <option value="4x4">4x4</option>
+            <option value="cabriolet">Cabriolet</option>
+            <option value="berline">Berline</option>
+            <option value="moto">Moto</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
       </div>
-    </main>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="10" required></textarea>
+      <input type="submit" value="ENVOYER" class="cta" />
+    </form>
+  </div>
+</main>
 
 
     <footer>

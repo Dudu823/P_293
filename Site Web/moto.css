@@ -1,4 +1,3 @@
-
 /*--------------------------BODY----------------------------*/
 body{
   background-image: url(image/pexels-captainsopon-3373090.jpg);
@@ -107,56 +106,56 @@ header{
 
 
 /*--------------------------MAIN----------------------------*/
-main{
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-.txt-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-}
-
-.photo-main{
+.photo-maincol1{
+  border-bottom: black solid;
   display: flex;
   justify-content: center;
 }
 
-.photo-acceuil img{
-  max-width: 500px;
+.photo-maincol2{
+  display: flex;
+  justify-content: center;
+}
+
+.photo-col1 img{
+  max-width: 300px;
   object-fit: cover;
   border-radius: 55px;
   border: rgba(0, 0, 0, 0.575) solid;
-  margin: 50px;
+  margin: 30px;
   box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 100px;
-} 
+  margin-right: 100px;
+}
+
+.photo-col2 img{
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 55px;
+  border: rgba(0, 0, 0, 0.575) solid;
+  margin: 30px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 100px;
+}
+
+.photo-col3 img{
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 55px;
+  border: rgba(0, 0, 0, 0.575) solid;
+  margin: 30px;
+  box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 100px;
+}
 
 .photo-hover:hover{
   opacity: 0.8;
-  
-}
-
-.txt-main a{
-  color: white;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.txt-main a:hover{
-  color: rgba(255, 0, 0, 0.548);
-  transition: 0.3s;
 }
 
 
 
 
-/*--------------------------FOOTER----------------------------*/
+
+  /*--------------------------FOOTER----------------------------*/
 .div-footer{
   background-color: rgba(0, 0, 0, 0.295);
   padding-top: 20px;
@@ -207,29 +206,40 @@ main{
     flex-direction: column;
     align-items: center;
     font-size: 24px;
-  }
-
-  .photo-acceuil img {
-    max-width: 90%;
-    margin: 20px auto;
+    max-width: 100%;
   }
 
   .txt-footer {
     flex-direction: column;
     font-size: 24px;
+    text-align: center;
   }
 
   .div-footer {
-    max-width: 100%;
     height: auto;
     padding: 20px;
+    width: 100%;
   }
 
   .div-copyright {
-    flex-direction: column;
-    align-items: center;
     font-size: 12px;
     text-align: center;
+  }
+
+  .photo-maincol1,
+  .photo-maincol2,
+  .photo-maincol3 {
+    flex-direction: column !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-col1 img,
+  .photo-col2 img,
+  .photo-col3 img {
+    margin: 20px auto;
+    max-width: 90%;
   }
 }
 
@@ -238,19 +248,7 @@ main{
     font-size: 20px;
   }
 
-  .txt-main {
-    font-size: 20px;
-    padding: 0 10px;
-  }
-
   .txt-footer {
     font-size: 18px;
-  }
-
-  .photo-acceuil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
